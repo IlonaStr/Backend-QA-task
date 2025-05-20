@@ -5,23 +5,25 @@
 (Fix version, environment, test type, description and pre-conditions can be a part of test cases, however, they can be optional)
 
 Test case 1
+
 Summary: Verify that user can be created
 Priority: High
 Test type: Functional (positive)
 Test steps:
 1. Import attached collections to Postman
 2. Find in the collection POST request called Create User
-2.1. Verify that body contains all required fields
-2.2. Verify that URL used is for the corresponding environment and action
+   2.1. Verify that body contains all required fields
+   2.2. Verify that URL used is for the corresponding environment and action
 3. Click on Send button and verify response
 Expected results:
 1. Collections are successfully imported
-2.1. Request body contains all required fields
-2.2. URL is correct
+   2.1. Request body contains all required fields
+   2.2. URL is correct
 3. The response is 200OK and a JSON with "message": "ok"
 Attached files: [the Postman collections]
 
 Test case 2
+
 Summary: Verify that user can be received by username
 Priority: High
 Test type: Functional (positive)
