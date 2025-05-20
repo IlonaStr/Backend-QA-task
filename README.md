@@ -172,6 +172,7 @@ Test steps:
 2.1. In the body of the request delete username field and adjust the request accordingly
 
 2.2. Verify that URL used is for the corresponding environment and action
+
 3. Click on Send button and verify response
 
 Expected results:
@@ -180,6 +181,7 @@ Expected results:
 2.1. Request body contains all fields except username
 
 2.2. URL is correct
+
 3. The response is 200OK (due to Swagger mock implementation) and a JSON returned with "message": "ok"
 
 Attached files: [the Postman collections]
