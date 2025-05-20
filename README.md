@@ -12,12 +12,16 @@ Test type: Functional (positive)
 Test steps:
 1. Import attached collections to Postman
 2. Find in the collection POST request called Create User
+
    2.1. Verify that body contains all required fields
+
    2.2. Verify that URL used is for the corresponding environment and action
-3. Click on Send button and verify response
+4. Click on Send button and verify response
 Expected results:
 1. Collections are successfully imported
+
    2.1. Request body contains all required fields
+
    2.2. URL is correct
 3. The response is 200OK and a JSON with "message": "ok"
 Attached files: [the Postman collections]
@@ -39,6 +43,7 @@ Expected results:
 Attached files: [the Postman collections]
 
 Test case 3
+
 Summary:  Verify that user data can be updated
 Priority: High
 Test type: Functional (positive)
@@ -56,6 +61,7 @@ Expected results:
 Attached files: [the Postman collections]
 
 Test case 4
+
 Summary:  Verify that updated user data is returned correctly after change
 Priority: High
 Test type: Functional (positive)
@@ -72,6 +78,7 @@ Expected results:
 Attached files: [the Postman collections]
 
 Test case 5
+
 Summary: Verify that user can be successfully deleted
 Priority: Medium → High
 Test type: Functional (positive)
@@ -91,7 +98,8 @@ Expected results:
 Attached files: [the Postman collections]
 
 Test case 6
-Summary:  Verify that deleted user cannot be retrieved
+
+Summary: Verify that deleted user cannot be retrieved
 Priority: High
 Test type: Functional (positive)
 Pre-conditions: 
@@ -108,6 +116,7 @@ Expected results:
 Attached files: [the Postman collections]
 
 Test case 7
+
 Summary: Verify that user can be created without a required field 
 Priority: Medium
 Test type: Functional (negative)
@@ -126,6 +135,7 @@ Attached files: [the Postman collections]
 Note: In the real API this request would send 400 Bad Request or 422 Unprocessable Entity.
 
 Test case 8
+
 Summary: Verify behavior when trying to retrieve a user that was created without a username
 Priority: Medium
 Test type: Functional (negative)
@@ -140,18 +150,3 @@ Expected results:
 1-1.1. Get user request contains the not set or empty {{username}} value in the URL
 2.The response code is 404 Not Found and the response body contains message "User not found
 Attached files: [the Postman collections]
-
-Test case 9
-Summary:  
-Priority:
-Test steps:
-Expected results:
-Attached files:
-
-Test case 10
-Summary:  
-Priority:
-Test steps:
-Expected results:
-Description:
-Attached files:
