@@ -49,8 +49,9 @@ Test steps:
 3. Click on Send button and verify the response
 
 Expected results:
-1. GET request contains appropriate URL
-2. The response is 200OK and all fields return expected values in the response
+1. GET user called Get user is in the collection
+2. GET request contains appropriate URL
+3. The response is 200OK and all fields return expected values in the response
 
 Attached files: [the Postman collections]
 
@@ -74,7 +75,9 @@ Test steps:
 
 Expected results:
 1. PUT request called Update user is in the collection
+
 2-3.PUT request contains data that needs to be modified and a correct URL
+
 4. The response is 200OK and a JSON with message "ok" or user ID
 
 Attached files: [the Postman collections]
@@ -205,12 +208,13 @@ Test steps:
 1. Find a Get user request
 
 1.1. Make sure that the {{username}} value is not set or empty
+
 2. Send a request and verify the response
 
 Expected results:
 
 1-1.1. Get user request contains the not set or empty {{username}} value in the URL
 
-2.The response code is 404 Not Found and the response body contains message "User not found
+2.The response code is 404 Not Found and the response body contains message "User not found"
 
 Attached files: [the Postman collections]
